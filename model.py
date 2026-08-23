@@ -290,4 +290,4 @@ def calculate_risk(test_pass_rate, vulnerabilities, build_time):
     result = predictor.predict_risk(features)
     
     # Return in original format
-    return result['risk_score'] / 100, result['decision']
+    return result['risk_score'] / 100, result['decision'] 
