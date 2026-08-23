@@ -6,7 +6,7 @@ streamlit
 pytest
 httpx
 bandit
-flak8
+flake8<7.0.0
 xgboost
 scikit-learn
 pandas
