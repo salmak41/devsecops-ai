@@ -1,3 +1,14 @@
 fastapi
 uvicorn
 pydantic
+requests
+streamlit
+pytest
+httpx
+bandit
+flak8
+xgboost
+scikit-learn
+pandas
+numpy
+joblib
