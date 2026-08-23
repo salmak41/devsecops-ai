@@ -291,3 +291,4 @@ def calculate_risk(test_pass_rate, vulnerabilities, build_time):
     
     # Return in original format
     return result['risk_score'] / 100, result['decision'] 
+ 
