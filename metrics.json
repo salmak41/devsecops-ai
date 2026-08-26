@@ -1,0 +1,10 @@
+{
+  "test_pass_rate": 0.85,
+  "critical_vulns": 2,
+  "high_vulns": 3,
+  "medium_vulns": 5,
+  "build_time": 120,
+  "code_churn": 8,
+  "past_failures": 1,
+  "timestamp": "2026-08-23T12:03:05.803884Z"
+}

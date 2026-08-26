@@ -1,0 +1,31 @@
+{
+  "model": "Random Forest",
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "all_models": {
+    "Logistic Regression": {
+      "accuracy": 0.999,
+      "precision": 0.9987531172069826,
+      "recall": 1.0,
+      "f1": 0.9993761696818465
+    },
+    "Random Forest": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "XGBoost": {
+      "accuracy": 0.999,
+      "precision": 0.9987531172069826,
+      "recall": 1.0,
+      "f1": 0.9993761696818465
+    }
+  },
+  "timestamp": "2026-08-23T11:42:33.354810Z",
+  "samples": 5000
+}

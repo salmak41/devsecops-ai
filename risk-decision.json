@@ -1,0 +1,9 @@
+{
+  "risk_score": 0.0,
+  "success_probability": 100.0,
+  "decision": "DEPLOY",
+  "top_factors": [
+    "No major risks detected"
+  ],
+  "model": "RandomForestClassifier"
+}
