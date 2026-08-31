@@ -12,3 +12,4 @@ scikit-learn
 pandas
 numpy
 joblib
+Pillow==8.1.0
