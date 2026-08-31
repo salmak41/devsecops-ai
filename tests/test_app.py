@@ -16,7 +16,7 @@ def test_predict_low_risk():
         "vulnerabilities": 0,
         "build_time": 60
     })
-    assert response.status_code == 200
+    assert response.status_code == 999  # intentional fail for dataset variation
     data = response.json()
     assert "risk_score" in data
     assert "decision" in data
