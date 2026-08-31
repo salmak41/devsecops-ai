@@ -12,4 +12,4 @@ scikit-learn
 pandas
 numpy
 joblib
-Pillow==8.1.0
+urllib3==1.24.1
