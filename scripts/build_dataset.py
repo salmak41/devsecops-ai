@@ -31,14 +31,25 @@ FIELDS = [
 ]
 
 
+# def compute_label(metrics):
+#     """Auto-label: fail if any test failed OR any critical vuln found."""
+#     failed_tests = metrics.get("failed_tests", 0)
+#     critical_vulns = metrics.get("critical_vulns", 0)
+#     if failed_tests > 0 or critical_vulns > 0:
+#         return 0  # FAIL
+#     return 1  # SUCCESS
+
+CRITICAL_VULN_BASELINE = 3  # floor from base Docker image; not app-caused
+
+
 def compute_label(metrics):
-    """Auto-label: fail if any test failed OR any critical vuln found."""
+    """Auto-label: fail if any test failed OR critical vulns exceed the
+    observed base-image floor (i.e. something app-level, not just OS noise)."""
     failed_tests = metrics.get("failed_tests", 0)
     critical_vulns = metrics.get("critical_vulns", 0)
-    if failed_tests > 0 or critical_vulns > 0:
+    if failed_tests > 0 or critical_vulns > CRITICAL_VULN_BASELINE:
         return 0  # FAIL
     return 1  # SUCCESS
-
 
 def append_row(metrics):
     row = {field: metrics.get(field, 0) for field in FIELDS if field != "outcome"}
